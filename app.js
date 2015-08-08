@@ -7,6 +7,12 @@ var bodyParser = require('body-parser');
 var hbs = require('hbs');
 var fs = require('fs');
 
+// Database configuration - MongoDB
+var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk('localhost:27017/data');
+
+
 var routes = require('./routes/index');
 var entry = require('./routes/entry');
 

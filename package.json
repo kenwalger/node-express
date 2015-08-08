@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "mocha"
   },
   "author": {
     "name": "Ken W. Alger",
@@ -22,11 +22,17 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "hbs": "~3.1.0",
+    "mongodb": "^2.0.39",
+    "monk": "^1.0.1",
     "morgan": "~1.6.1",
+    "passport": "^0.2.2",
     "serve-favicon": "~2.3.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/kenwalger/node-express"
+  },
+  "devDependencies": {
+    "jasmine": "^2.3.2"
   }
 }
