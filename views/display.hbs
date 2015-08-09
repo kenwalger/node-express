@@ -1,6 +1,6 @@
 <div class="columns large-8 large-offset-2">
     <br>
-    <h3>Data Entered</h3>
+    <h3>{{ title }}</h3>
         <div>
             <table border="1" cellspacing="0" cellpadding="3">
                 <tbody>
@@ -13,8 +13,9 @@
                 </tbody>
             </table>
 
+            Test
             {{#each oslist}}
-                <li>{{ this }}</li>
+                <li>{{@key}}: {{ this }}</li>
             {{/each}}
         </div>
 </div>

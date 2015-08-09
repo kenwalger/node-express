@@ -3,6 +3,7 @@ var router = express.Router();
 
 /* GET OS listing. */
 router.get('/display', function(request, response) {
+    console.log("Attempting to connect to db from display.js");
     var db = request.db;
     var collection = db.get('oscollection');
     collection.find({}, {}, {}, function(e, docs){
