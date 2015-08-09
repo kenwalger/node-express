@@ -14,7 +14,8 @@
     "node.js",
     "express",
     "handlebars",
-    "foundation"
+    "foundation",
+    "MongoDB"
   ],
   "dependencies": {
     "body-parser": "~1.13.2",

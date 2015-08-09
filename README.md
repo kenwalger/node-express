@@ -9,6 +9,11 @@ Development Stack
 3. [Handlebars](http://handlebars.js.com "Handlebars")
 4. [MongoDB](http://www.mongodb.org "MongoDB")
 
+Testing
+=======
+
+1. [Jasmine](http://http://jasmine.github.io/ "Jasmine: Behavior-Driven JavaScript")
+
 
 Description
 ===========
