@@ -11,6 +11,21 @@ a {
     color: royalblue;
 }
 
-#footer-logo {
+#node-logo {
     background-color: #303030;
+}
+
+#mongo-logo {
+    background-color: #3B291F;
+}
+
+#express-logo {
+    background-color: white;
+}
+
+.footer-logo {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+
 }

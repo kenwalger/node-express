@@ -13,8 +13,10 @@ var monk = require('monk');
 var db = monk('localhost:27017/data');
 
 
+
 var routes = require('./routes/index');
 var entry = require('./routes/entry');
+var display = require('./routes/display');
 
 var app = express();
 
@@ -25,7 +27,6 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-app.use(express.static(__dirname + 'public'));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -35,8 +36,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//Make our db accessible to our router
+app.use(function(request, response, next) {
+    request.db = db;
+    next();
+});
+
 app.use('/', routes);
 app.use('/entry', entry);
+app.use('/display', display);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
