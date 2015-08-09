@@ -8,7 +8,10 @@ router.get('/display', function(request, response) {
     var collection = db.get('oscollection');
     collection.find({}, {}, {}, function(e, docs){
         response.render('display', {
-           "oslist" : docs
+           "oslist" : docs,
+            os2 : "Windows",
+            osVersion2 : "98",
+            notes2 : "Are these still really out there?"
         });
     });
 });

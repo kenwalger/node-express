@@ -14,7 +14,10 @@ router.get('/display', function(request, response) {
     collection.find({}, {}, function(e, docs){
         response.render('display', {
             title: 'Data Display',
-            "oslist" : docs
+            "oslist" : docs,
+            os2 : "Windows",
+            osVersion2 : "98",
+            notes2 : "Are these still really out there?"
         });
     });
 });

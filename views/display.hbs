@@ -13,9 +13,12 @@
                 </tbody>
             </table>
 
-            Test
+            <div>
+                <h4>Test Data</h4>
+            </div>
+
             {{#each oslist}}
-                <li>{{@key}}: {{ this }}</li>
+                <li>{{ os }} | {{ osVersion }} | {{ notes }}</li>
             {{/each}}
         </div>
 </div>
