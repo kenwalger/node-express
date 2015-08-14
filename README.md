@@ -1,6 +1,10 @@
 Node.js with Express
 ====================
 
+[![Build Status](https://travis-ci.org/kenwalger/node-express.svg?branch=master)](https://travis-ci.org/kenwalger/node-express)
+[![Dependency Status](https://david-dm.org/kenwalger/node-express.svg)](https://david-dm.org/kenwalger/node-express)
+[![devDependency Status](https://david-dm.org/kenwalger/node-express/dev-status.svg)](https://david-dm.org/kenwalger/node-express#info=devDependencies)
+
 Development Stack
 =================
 
